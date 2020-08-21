@@ -26,6 +26,7 @@ $(document).ready(function() {
     const element = $(datatableRowTemplate).clone();
 
     element.attr('data-task-id', data.id);
+	
     element.find('[data-task-name-section] [data-task-name-paragraph]').text(data.title);
     element.find('[data-task-name-section] [data-task-name-input]').val(data.title);
 
